@@ -1,0 +1,67 @@
+.network-list {
+  .network {
+    width: 235px;
+    height: 235px;
+    border: 1px solid #cccccc;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #aaaaaa;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+
+    &:hover {
+      cursor: pointer;
+      transition: all 0.1s linear;
+      -webkit-transition: all 0.1s linear;
+      -o-transition: all 0.1s linear;
+      -moz-transition: all 0.1s linear;
+      -ms-transition: all 0.1s linear;
+      border: 1px solid #50338F;
+    }
+
+    .portrait {
+      // margin-left: 10px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    .name {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #50338F;
+    }
+    .level {
+      margin: 0;
+      font-size: 14px;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 15px;
+
+      li {
+        float: left;
+        width: 100px;
+        margin-left: 8px;
+
+        p {
+          margin: 0;
+        }
+        .value {
+          font-size: 18px;
+          color: #555555;
+        }
+        .title {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

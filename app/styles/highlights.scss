@@ -1,0 +1,82 @@
+.highlight {
+  min-height: 300px;
+  width: 251px;
+  border: 1px solid #cccccc;
+  margin-top: 10px;
+  margin-right: 20px;
+  float: left;
+
+  .photo {
+    // border-radius: 5px 5px 0 0;
+  }
+  .indicator {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 40px 40px 0;
+    position: relative;
+    top: -180px;
+    left: 210px;
+    &.facebook {
+      border-color: transparent #3c5a96 transparent transparent;
+    }
+    &.twitter {
+      border-color: transparent #26ADEA transparent transparent;
+    }
+    &.instagram {
+      border-color: transparent #5380A2 transparent transparent;
+    }
+    i.fa-facebook, i.fa-twitter, i.fa-instagram {
+      color: #ffffff !important;
+      position: relative;
+    }
+    i.fa-facebook {
+      left: 24px;
+      top: 4px;
+    }
+    i.fa-twitter {
+      left: 20px;
+      top: 3px;
+    }
+    i.fa-instagram {
+      left: 22px;
+      top: 2px;
+      font-size: 16px;
+    }
+  }
+  .caption {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -30px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .date {
+    margin-left: 10px;
+    font-size: 10px;
+    color: #bbbbbb;
+    // font-weight: bold;
+  }
+  ul.metadata {
+    list-style: none;
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+    li {
+      margin: 0;
+      padding: 0;
+      width: 33%;
+      float: left;
+      position: relative;
+    }
+    .title {
+      margin: 0;
+      font-size: 11px;
+      color: #bbbbbb;
+    }
+    .value {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+}
