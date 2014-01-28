@@ -4,7 +4,9 @@
   border: 1px solid #cccccc;
   margin-top: 10px;
   margin-right: 20px;
+  margin-bottom: 20px;
   float: left;
+  background-color: #ffffff;
 
   .photo {
     // border-radius: 5px 5px 0 0;
@@ -13,10 +15,10 @@
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 0 40px 40px 0;
+    border-width: 0 45px 45px 0;
     position: relative;
     top: -180px;
-    left: 210px;
+    left: 205px;
     &.facebook {
       border-color: transparent #3c5a96 transparent transparent;
     }
@@ -31,16 +33,16 @@
       position: relative;
     }
     i.fa-facebook {
-      left: 24px;
-      top: 4px;
+      left: 22px;
+      top: 3px;
     }
     i.fa-twitter {
-      left: 20px;
+      left: 22px;
       top: 3px;
     }
     i.fa-instagram {
       left: 22px;
-      top: 2px;
+      top: 1px;
       font-size: 16px;
     }
   }

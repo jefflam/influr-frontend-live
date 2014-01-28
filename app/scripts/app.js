@@ -56,6 +56,22 @@ angular.module('influrUser', [
         templateUrl: 'views/settings_privacy.html',
         controller: 'SettingsCtrl'
       })
+      .when('/user/scarlett', {
+        templateUrl: 'views/user_profile.html',
+        controller: 'UserProfileCtrl'
+      })
+      .when('/user/scarlett', {
+        templateUrl: 'views/user_profile.html',
+        controller: 'UserProfileCtrl'
+      })
+      .when('/user/scarlett/assignments', {
+        templateUrl: 'views/user_profile_assignments.html',
+        controller: 'UserProfileCtrl'
+      })
+      .when('/user/scarlett/highlights', {
+        templateUrl: 'views/user_profile_highlights.html',
+        controller: 'UserProfileCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

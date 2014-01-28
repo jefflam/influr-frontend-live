@@ -7,4 +7,10 @@ angular.module('influrUser')
       'AngularJS',
       'Karma'
     ];
+  })
+  .controller('TreatsCtrl', function () {
+    console.log('TreatsCtrl');
+  })
+  .controller('UserProfileCtrl', function () {
+    console.log('UserProfileCtrl');
   });
