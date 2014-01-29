@@ -60,10 +60,6 @@ angular.module('influrUser', [
         templateUrl: 'views/user_profile.html',
         controller: 'UserProfileCtrl'
       })
-      .when('/user/scarlett', {
-        templateUrl: 'views/user_profile.html',
-        controller: 'UserProfileCtrl'
-      })
       .when('/user/scarlett/assignments', {
         templateUrl: 'views/user_profile_assignments.html',
         controller: 'UserProfileCtrl'
@@ -71,6 +67,38 @@ angular.module('influrUser', [
       .when('/user/scarlett/highlights', {
         templateUrl: 'views/user_profile_highlights.html',
         controller: 'UserProfileCtrl'
+      })
+      .when('/payments', {
+        templateUrl: 'views/payments.html',
+        controller: 'UserPaymentsCtrl'
+      })
+      .when('/business/dashboard', {
+        templateUrl: 'views/business/dashboard.html',
+        controller: 'BusinessDashboardCtrl'
+      })
+      .when('/business/dashboard/treats', {
+        templateUrl: 'views/business/dashboard-treats.html',
+        controller: 'BusinessDashboardCtrl'
+      })
+      .when('/business/dashboard/assignments', {
+        templateUrl: 'views/business/dashboard-assignments.html',
+        controller: 'BusinessDashboardCtrl'
+      })
+      .when('/business/treats', {
+        templateUrl: 'views/business/treats.html',
+        controller: 'BusinessTreatsCtrl'
+      })
+      .when('/business/assignments', {
+        templateUrl: 'views/business/assignments.html',
+        controller: 'BusinessAssignmentsCtrl'
+      })
+      .when('/business/settings', {
+        templateUrl: 'views/business/settings.html',
+        controller: 'BusinessSettingsCtrl'
+      })
+      .when('/business/paradise-group', {
+        templateUrl: 'views/business/business_profile.html',
+        controller: 'BusinessProfileCtrl'
       })
       .otherwise({
         redirectTo: '/'

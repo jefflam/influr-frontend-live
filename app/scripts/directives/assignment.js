@@ -5,9 +5,9 @@ angular.module('influrUser')
     return {
       restrict: 'E',
       templateUrl: 'views/templates/assignment.html',
-      link: function(scope, element, attributes, ngModel) {
-        $(element.children()[0]).click(function(){
-          $(element.children().children()[2]).collapse('toggle');
+      link: function(scope, element) {
+        angular.element(element.children()[0]).click(function(){
+          angular.element(element.children().children()[2]).collapse('toggle');
         });
       }
     };
