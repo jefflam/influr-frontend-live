@@ -6,4 +6,10 @@ angular.module('influrUser')
       restrict: 'E',
       templateUrl: 'views/templates/menu.html'
     };
+  })
+  .directive('mainMenuBusiness', function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'views/templates/menu_business.html'
+    };
   });
