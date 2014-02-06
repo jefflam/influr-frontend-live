@@ -34,11 +34,11 @@
     }
     i.fa-facebook {
       left: 22px;
-      top: 3px;
+      top: 0px;
     }
     i.fa-twitter {
       left: 22px;
-      top: 3px;
+      top: 0px;
     }
     i.fa-instagram {
       left: 22px;
@@ -49,13 +49,13 @@
   .caption {
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: -30px;
+    margin-top: -40px;
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 16px;
   }
   .date {
     margin-left: 10px;
-    font-size: 10px;
+    font-size: 14px;
     color: #bbbbbb;
     // font-weight: bold;
   }
@@ -66,6 +66,7 @@
     padding: 0;
     li {
       margin: 0;
+      margin-bottom: 5px;
       padding: 0;
       width: 33%;
       float: left;
@@ -73,12 +74,12 @@
     }
     .title {
       margin: 0;
-      font-size: 11px;
+      font-size: 13px;
       color: #bbbbbb;
     }
     .value {
       margin: 0;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }
