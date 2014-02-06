@@ -3,13 +3,19 @@ $menu-font: 'futura-pt', 'Open Sans', Helvetica, Arial, sans-serif;
 $menu-font-size: 16px;
 $menu-font-color: #ffffff;
 
+.menubg {
+  background-color: #50338F;
+}
+
 .menu {
   background-color: #50338F;
   color: $menu-font-color;
   padding: 0;
   position: fixed;
+  margin-left: -15px;
   height: 100%;
-  width: 213px;
+  // width: 213px;
+  // margin-left: -15px;
 
   .logo {
     border-bottom: 2px solid #412A73;
