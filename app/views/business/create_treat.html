@@ -155,16 +155,14 @@
 
           <div class="form-group">
             <label for="date" class="col-sm-2 control-label">DATE</label>
-            <div class="col-sm-10">
-              <p class="input-group">
-                <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min="minDate" max="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
-                <span class="input-group-btn">
-                  <button class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
-                </span>
-              </p>
-              <!-- <input type="text" class="form-control" placeholder="1st January 2014"> -->
-              <!-- to
-              <input type="text" class="form-control" placeholder="1st January 2014"> -->
+            <div class="col-sm-10 datepicker">
+              <div class="col-sm-6 from-date">
+                <input type="text" class="form-control" ng-model="fromDate" data-max-date="{{untilDate}}" placeholder="Start Date" data-date-format="fullDate" data-autoclose="true" bs-datepicker>
+              </div>
+              <span>to</span>
+              <div class="col-sm-6 to-date">
+                <input type="text" class="form-control" ng-model="untilDate" data-min-date="{{fromDate}}" placeholder="End Date" data-date-format="fullDate" data-autoclose="true" bs-datepicker>
+              </div>
             </div>
           </div>
 

@@ -17,6 +17,12 @@ angular.module('influrUser')
   .controller('BusinessDashboardCtrl', function () {
     console.log('BusinessDashboardCtrl');
   })
+  .controller('BusinessTreatsCtrl', function () {
+    console.log('BusinessTreatsCtrl');
+  })
+  .controller('BusinessAssignmentsCtrl', function () {
+    console.log('BusinessAssignmentsCtrl');
+  })
   .controller('BusinessProfileCtrl', function () {
     console.log('BusinessProfileCtrl');
   });

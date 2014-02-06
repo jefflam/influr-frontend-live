@@ -38,4 +38,25 @@
       margin-left: 125px;
     }
   }
+  .datepicker {
+    input {
+      margin: 0;
+    }
+    .from-date {
+      padding-left: 0px;
+      padding-right: 15px;
+    }
+    .to-date {
+      padding-right: 0px;
+      padding-left: 15px;
+    }
+    span {
+      padding: 0;
+      width: 0px;
+      right: 6px;
+      top: 6px;
+      float: left;
+      position: relative;
+    }
+  }
 }
