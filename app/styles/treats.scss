@@ -1,35 +1,38 @@
 .treats {
-  .input-group {
-    .fa {
-      color: #a7a7a7;
-      margin-left: 5px;
+  .search-box {
+    max-width: 960px;
+    .input-group {
+      .fa {
+        color: #a7a7a7;
+        margin-left: 5px;
+      }
     }
-  }
-  .filter-title {
-    color: #aaaaaa;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .filter-group {
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      li {
-        float: left;
+    .filter-title {
+      color: #aaaaaa;
+      margin-top: 10px;
+      margin-bottom: 2px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .filter-group {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          float: left;
 
-        .input-group {
-          width: 100%;
-        }
+          .input-group {
+            width: 100%;
+          }
 
-        .filter-select-title {
-          color: #aaaaaa;
-          font-size: 16px;
-          font-weight: bold;
-          text-align: center;
-          margin-top: 3px;
+          .filter-select-title {
+            color: #aaaaaa;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 3px;
+          }
         }
       }
     }

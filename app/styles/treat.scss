@@ -10,6 +10,7 @@
   -ms-transition: all 0.2s linear;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 860px;
   &:hover {
     cursor: pointer;
     border-bottom: 6px solid #ececec;
@@ -63,7 +64,7 @@
       position: absolute;
       bottom: -12px;
       li {
-        width: 150px;
+        width: 130px;
         float: left;
         margin-right: 10px;
         p.metadata-title {
@@ -80,6 +81,9 @@
   }
   .cover-photo {
     padding-left: 0px;
+    img {
+      // width: 100%;
+    }
   }
   .details {
     background-color: #eeeeee;
@@ -151,6 +155,65 @@
     margin-bottom: 10px;
     &:hover {
       background-color: #F6F2FF;
+    }
+  }
+}
+
+@media all and (max-width: 880px) {
+  .treat, .assignment {
+    max-width: 500px;
+    width: inherit;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 100%;
+    .col-sm-3 {
+      width: 100%;
+      padding-right: 0;
+      img {
+        width: 100%;
+        max-width: 500px
+      }
+    }
+    .col-sm-9 {
+      width: 100%;
+      height: initial;
+      background-color: #eeeeee;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      .title {
+        font-size: 22px;
+        margin-top: 0;
+        padding-top: 10px;
+      }
+      ul.metadata {
+        position: relative;
+        height: 100%;
+        li {
+          width: 150px;
+          float: none;
+          p.metadata-title {
+            font-size: 18px;
+          }
+          p.metadata-info {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .col-sm-12.details {
+      .form-group {
+        .col-sm-2, .col-sm-10 {
+          width: 100%;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .assignment {
+    .col-sm-9 {
+      background-color: #F8F5FF;
     }
   }
 }

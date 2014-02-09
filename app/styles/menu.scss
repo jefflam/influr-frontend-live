@@ -7,7 +7,7 @@ $menu-font-color: #ffffff;
   background-color: #50338F;
 }
 
-.menu {
+.menu, .menu-aside {
   background-color: #50338F;
   color: $menu-font-color;
   padding: 0;
@@ -21,7 +21,7 @@ $menu-font-color: #ffffff;
     border-bottom: 2px solid #412A73;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 60px;
+    text-align: center;
   }
 
   h1, h2, h3, h4, h5, p, span {
@@ -61,6 +61,9 @@ $menu-font-color: #ffffff;
         display: block;
         padding-left: 15px;
         text-decoration: none;
+        &:hover {
+          color: $menu-font-color;
+        }
       }
       img.portrait{
         margin-left: -3px;
@@ -84,7 +87,6 @@ $menu-font-color: #ffffff;
       padding-top: 1px;
       padding-bottom: 1px;
       a {
-        // text-decoration: none;
         display: initial;
         &:hover {
           text-decoration: underline;
@@ -115,6 +117,28 @@ $menu-font-color: #ffffff;
       text-decoration: none;
     }
   }
+  .sub-menu-nav-popover {
+    display: none;
+    cursor: pointer;
+    margin-left: 20px;
+    .fa-caret-down {
+      color: #50338F;
+    }
+    .popover {
+      text-align: center;
+    }
+  }
+  .menu-aside-button {
+    display: none;
+    position: absolute;
+    background: none;
+    border: none;
+    top: -2px;
+    left: 21px;
+    .fa-bars {
+      color: #50338F
+    }
+  }
 }
 .fa {
   font-size: 18px;
@@ -143,5 +167,33 @@ $menu-font-color: #ffffff;
     font-size: 12px;
     font-weight: bold;
     padding-right: 15px;
+  }
+}
+
+.menu-aside {
+  z-index: 1049;
+  text-align: left;
+  top: 0px;
+  left: 15px;
+  width: 200px;
+}
+
+@media all and (max-width: 1069px) {
+  .menubg, .menu {
+    display: none;
+  }
+  .menu-aside-button {
+    display: block !important;
+  }
+}
+
+@media all and (max-width: 880px) {
+  .sub-menu {
+    .sub-menu-nav {
+      display: none;
+    }
+    .sub-menu-nav-popover {
+      display: block;
+    }
   }
 }

@@ -1,11 +1,18 @@
 <div class="row">
   <main-menu-business></main-menu-business>
 
-  <div class="col-sm-10 col-sm-offset-2 settings">
+  <div class="col-sm-10 settings">
     <div class="row">
       <div class="col-sm-12 sub-menu">
-        <a href="#/business/settings">PROFILE</a> | <a href="#/business/settings/social-media" class="active">SOCIAL MEDIA ACCOUNTS</a> | <a href="#/business/settings/privacy">PRIVACY</a>
+        <menu-aside-business-button></menu-aside-business-button>
+        <div class="sub-menu-nav">
+          <a href="#/business/settings">PROFILE</a> | <a href="#/business/settings/social-media" class="active">SOCIAL MEDIA ACCOUNTS</a> | <a href="#/business/settings/privacy">PRIVACY</a>
+        </div>
+        <div class="sub-menu-nav-popover">
+          <submenu-popover active-nav="SOCIAL MEDIA ACCOUNTS" content="<a href='#/business/settings'>PROFILE</a> <br> <a href='#/business/settings/privacy'>PRIVACY</a>"></submenu-popover>
+        </div>
       </div>
+    </div>
 
     <div class="row">
       <div class="col-sm-9 col-sm-offset-2">

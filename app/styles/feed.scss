@@ -6,6 +6,7 @@ $feed-font-color: #333333;
 
 .feed {
   .feed-group {
+    width: 860px;
     > p.date {
       color: #808080;
       border-bottom: 1px solid #bbbbbb;
@@ -27,6 +28,14 @@ $feed-font-color: #333333;
           font-weight: bold;
         }
       }
+    }
+  }
+}
+
+@media all and (max-width: 880px) {
+  .feed {
+    .feed-group {
+      width: inherit;
     }
   }
 }

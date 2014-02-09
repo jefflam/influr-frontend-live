@@ -5,7 +5,8 @@ angular.module('influrUser', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'mgcrea.ngStrap'
+  'mgcrea.ngStrap',
+  'ngAnimate'
 ])
   .config(function ($routeProvider) {
     $routeProvider

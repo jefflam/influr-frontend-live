@@ -1,11 +1,18 @@
 <div class="row">
   <main-menu-business></main-menu-business>
 
-  <div class="col-sm-10 col-sm-offset-2 create-treats-assignments">
+  <div class="col-sm-10 create-treats-assignments">
     <div class="row">
       <div class="col-sm-12 sub-menu">
-        <a href="#/business/assignments">ASSIGNMENTS CREATED</a> | <a href="#/business/assignments/create-assignment" class="active">CREATE ASSIGNMENT</a>
+        <menu-aside-business-button></menu-aside-business-button>
+        <div class="sub-menu-nav">
+          <a href="#/business/assignments">ASSIGNMENTS CREATED</a> | <a href="#/business/assignments/create-assignment" class="active">CREATE ASSIGNMENT</a>
+        </div>
+        <div class="sub-menu-nav-popover">
+          <submenu-popover active-nav="CREATE ASSIGNMENTS" content="<a href='#/business/assignments'>ASSIGNMENTS CREATED</a>"></submenu-popover>
+        </div>
       </div>
+    </div>
 
     <div class="row">
       <div class="col-sm-7 col-sm-offset-2">

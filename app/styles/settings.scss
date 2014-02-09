@@ -36,3 +36,12 @@
     margin-left: 5px;
   }
 }
+
+@media all and (max-width: 1269px) {
+  .settings {
+    .radio-inline {
+      margin-left: 10px;
+      width: 100%;
+    }
+  }
+}

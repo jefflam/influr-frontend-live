@@ -25,4 +25,16 @@ angular.module('influrUser')
   })
   .controller('BusinessProfileCtrl', function () {
     console.log('BusinessProfileCtrl');
+  })
+  .controller('AssignmentsCtrl', function () {
+    console.log('AssignmentsCtrl');
+  })
+  .controller('NetworkCtrl', function () {
+    console.log('NetworkCtrl');
+  })
+  .controller('SettingsCtrl', function () {
+    console.log('SettingsCtrl');
+  })
+  .controller('BusinessSettingsCtrl', function () {
+    console.log('BusinessSettingsCtrl');
   });

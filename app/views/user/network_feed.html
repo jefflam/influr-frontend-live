@@ -1,15 +1,21 @@
 <div class="row">
   <main-menu></main-menu>
 
-  <div class="col-sm-10 col-sm-offset-2 feed">
+  <div class="col-sm-10 feed">
     <div class="row">
       <div class="col-sm-12 sub-menu">
-        <a href="#/network">YOUR NETWORK</a> | <a href="#/network/feed" class="active">NETWORK ACTIVITY FEED</a>
+        <menu-aside-button></menu-aside-button>
+        <div class="sub-menu-nav">
+          <a href="#/network">YOUR NETWORK</a> | <a href="#/network/feed" class="active">NETWORK FEED</a>
+        </div>
+        <div class="sub-menu-nav-popover">
+          <submenu-popover active-nav="NETWORK FEED" content="<a href='#/network'>YOUR NETWORK</a>"></submenu-popover>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
+      <div class="col-sm-10 main-content">
         <div class="feed-group">
           <p class="date">SUNDAY 26TH JANUARY 2014</p>
           <div class="row feed-object">
