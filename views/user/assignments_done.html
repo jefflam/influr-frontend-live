@@ -1,0 +1,31 @@
+<div class="row">
+  <main-menu></main-menu>
+
+  <div class="col-sm-10 assignments">
+    <div class="row">
+      <div class="col-sm-12 sub-menu">
+        <menu-aside-button></menu-aside-button>
+        <div class="sub-menu-nav">
+          <a href="#/assignments">NEW ASSIGNMENTS</a> | <a href="#/assignments/ongoing">ONGOING ASSIGNMENTS</a> | <a href="#/assignments/done" class="active">ASSIGNMENTS DONE</a>
+        </div>
+        <div class="sub-menu-nav-popover">
+          <submenu-popover active-nav="ASSIGNMENTS DONE" content="<a href='#/assignments'>NEW ASSIGNMENTS</a> <br> <a href='#/assignments/ongoing'>ONGOING ASSIGNMENTS</a>"></submenu-popover>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-10 main-content">
+        <div class="feed-group">
+          <div class="feed-object">
+            <assignment></assignment>
+          </div>
+
+          <div class="feed-object">
+            <assignment></assignment>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

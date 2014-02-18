@@ -1,0 +1,41 @@
+$feed-font: 'Open Sans', Arial, Helvetica, sans-serif;
+$feed-font-size: 14px;
+$feed-font-color: #333333;
+
+@import '../styles/highlights';
+
+.feed {
+  .feed-group {
+    width: 860px;
+    > p.date {
+      color: #808080;
+      border-bottom: 1px solid #bbbbbb;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .fa {
+      color: #50338F;
+    }
+    .feed-object {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      margin-right: 0px;
+
+      .recommended-treats, .network-joined, .network-treat-redemption, .user-level-increase, .highlights-change {
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 880px) {
+  .feed {
+    .feed-group {
+      width: inherit;
+    }
+  }
+}

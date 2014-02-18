@@ -1,0 +1,95 @@
+<div class="row">
+  <main-menu></main-menu>
+
+  <div class="col-sm-10 settings">
+    <div class="row">
+      <div class="col-sm-12 sub-menu">
+        <menu-aside-button></menu-aside-button>
+        <div class="sub-menu-nav">
+          <a href="#/settings" class="active">PROFILE</a> | <a href="#/settings/social-media">SOCIAL MEDIA ACCOUNTS</a> | <a href="#/settings/privacy">PRIVACY</a>
+        </div>
+        <div class="sub-menu-nav-popover">
+          <submenu-popover active-nav="PROFILE" content="<a href='#/settings/social-media'>SOCIAL MEDIA ACCOUNTS</a> <br> <a href='#/settings/privacy'>PRIVACY</a>"></submenu-popover>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7 col-sm-offset-2">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="picture" class="col-sm-2 control-label">PICTURE</label>
+            <div class="col-sm-10">
+              <img src="http://placehold.it/150x150.png" class="img-circle">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">NAME</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="name" placeholder="Name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="gender" class="col-sm-2 control-label">GENDER</label>
+            <div class="col-sm-10">
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="male" id="male" value="male"> Male
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="male" id="male" value="male"> Female
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label">LOCATION</label>
+            <div class="col-sm-10">
+              <select class="form-control">
+                <option>Singapore</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label">INTERESTS</label>
+            <div class="col-sm-10">
+              <select class="form-control">
+                <option>Automotive</option>
+                <option>Education & Learning</option>
+                <option>Entertainment</option>
+                <option>Financial Services</option>
+                <option>Food & Beverages</option>
+                <option>Hair & Beauty</option>
+                <option>Luxury</option>
+                <option>Retail</option>
+                <option>Sports</option>
+                <option>Technology</option>
+                <option>Travel</option>
+                <option>Parenting</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label">BIO</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" rows="5">Enter your bio...</textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
